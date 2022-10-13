@@ -5,8 +5,9 @@
 }
 
 body{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     border:2px solid white;
+    height: 100vh;
 }
 
 header{
@@ -72,3 +73,52 @@ main nav div:first-of-type a{
 .nav__saved-reports::after{
     content: "+";
 }
+/* table */
+table{
+    font-size: 20px;
+    border-spacing: 0px;
+    margin: 20px auto;
+    width: 100%;
+    
+}
+table tr{
+    border-top: 1px solid #4d4d4d;
+}
+td {
+    padding: 10px 76px;
+    font-size: 20px;
+   text-align: left;
+}
+tr:nth-child(even){
+    background-color: white;
+}
+tr:nth-child(odd){
+    background-color: rgb(235 234 234);
+}
+
+.main__features{
+    display: flex;
+    justify-content: space-between;
+}
+.main__features div:first-of-type{
+font-size: 30px;
+font-weight: bold;
+}
+
+.main__features button{
+    padding: 4px 13px;
+    background: white;
+    border: 1px solid gray;
+    color: gray;
+    border-radius: 4px 0 0 4px;
+}
+
+.main__features button:first-of-type{
+    padding: 4px 13px;
+    background: white;
+    border: 1px solid gray;
+    color: gray;
+    margin-right: -5px;
+    border-radius: 4px 0 0 4px;
+}
+
