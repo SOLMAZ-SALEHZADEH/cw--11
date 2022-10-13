@@ -5,6 +5,120 @@
 }
 
 body{
-    background-color: antiquewhite;
-    font-size: 14px;
+    /* background-color: antiquewhite; */
+    border:2px solid white;
+    height: 100vh;
 }
+
+header{
+    display: grid;
+    grid-template-columns: 2fr 8fr 1fr;
+}
+
+.header__company-name{
+    color:white;
+    background-color: rgb(32, 32, 32);
+    padding: 20px 20px;
+}
+
+.header__search{
+    color:rgb(129, 127, 127);
+    background-color: rgb(62, 62, 62);
+    padding: 20px 20px;
+    border:0
+}
+
+.header__sign-out{
+    color:rgb(165, 165, 165);
+    background-color: rgb(30, 29, 29);
+    padding: 20px 20px;
+    border:0
+}
+
+main{
+        display: grid;
+        grid-template-columns: 2fr 9fr;
+}
+main div,main nav{
+    padding: 14px;
+}
+nav{
+    background-color: #f2f1f1;
+    border-right: 1px solid lightgray;
+}
+
+main nav a{
+    /* display: block; */
+    text-decoration: none;
+    color: #676666;
+    padding-bottom: 12px;
+}
+
+main nav div img{
+    width: 18px;
+    margin-right: 4px;
+}
+
+main nav div:first-of-type a{
+    color:blue!important;
+}
+
+.nav__saved-reports{
+    margin-top: 30px;
+    /* margin-bottom: 10px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__saved-reports::after{
+    content: "+";
+}
+/* table */
+table{
+    font-size: 20px;
+    border-spacing: 0px;
+    margin: 20px auto;
+    width: 100%;
+    
+}
+table tr{
+    border-top: 1px solid #4d4d4d;
+}
+td {
+    padding: 10px 76px;
+    font-size: 20px;
+   text-align: left;
+}
+tr:nth-child(even){
+    background-color: white;
+}
+tr:nth-child(odd){
+    background-color: rgb(235 234 234);
+}
+
+.main__features{
+    display: flex;
+    justify-content: space-between;
+}
+.main__features div:first-of-type{
+font-size: 30px;
+font-weight: bold;
+}
+
+.main__features button{
+    padding: 4px 13px;
+    background: white;
+    border: 1px solid gray;
+    color: gray;
+    border-radius: 4px 0 0 4px;
+}
+
+.main__features button:first-of-type{
+    padding: 4px 13px;
+    background: white;
+    border: 1px solid gray;
+    color: gray;
+    margin-right: -5px;
+    border-radius: 4px 0 0 4px;
+}
+
